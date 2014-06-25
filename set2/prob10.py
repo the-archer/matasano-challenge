@@ -14,7 +14,7 @@ f1.close()
 
 key = ("YELLOW SUBMARINE").encode('UTF-8')
 
-iv = bytes(0)*16
+iv = bytes(16)
 #print (bigstring)
 print (len(iv))
 
