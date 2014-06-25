@@ -13,9 +13,11 @@ for  line in f1:
 f1.close()
 
 key = ("YELLOW SUBMARINE").encode('UTF-8')
+
 iv = bytes(0)*16
 #print (bigstring)
 print (len(iv))
+
 
 cbc.decrypt(bigstring, key, iv)
 
