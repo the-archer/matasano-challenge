@@ -32,16 +32,13 @@ def encryption_oracle(ptext):
 			btext = padding.padding(btext, len(btext)+ 16 -(len(btext)%16))
 		obj = AES.new(bytes(key), AES.MODE_ECB)
 		cip = obj.encrypt(bytes(btext))
-		print ("ECB")
+		#print ("ECB")
 	else:
 		iv=get_random_bytes(16)
 		cip = cbc.encrypt(btext, bytes(key), iv)
-		print ("CBC")
+		#print ("CBC")
 
 
 
 
 	return cip
-
-
-#demo changes
