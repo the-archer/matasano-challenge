@@ -42,3 +42,6 @@ def encryption_oracle(ptext):
 
 
 	return cip
+
+
+#demo changes
