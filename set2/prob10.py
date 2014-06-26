@@ -16,11 +16,11 @@ key = ("YELLOW SUBMARINE").encode('UTF-8')
 
 iv = bytes(16)
 #print (bigstring)
-print (len(iv))
 
 
-cbc.decrypt(bigstring, key, iv)
+ans = cbc.decrypt(bigstring, key, iv)
 
+print (ans.decode('UTF-8'))
 
 
 
